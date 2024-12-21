@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Cat Fact</title>
+
+  <!-- Link to the external style.css file -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="13.jpg" type="image/jpg"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Random Cat Fact</h1>
+    <p id="catFact">Click the button to get a random cat fact!</p>
+    <div id="loader" class="loader" style="display: none;"></div>
+    <img id="catImage" src="" alt="Random Cat Image" style="display: none;">
+    <button id="getFactButton">Get Cat Fact</button>
+  </div>
+
+  <!-- Link to the external script.js file -->
+  <script src="script.js"></script>
+
+  <!-- Register the service worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(function(registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(function(error) {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</body>
+</html>
