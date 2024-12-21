@@ -1,0 +1,23 @@
+{
+    "name": "Random Cat Fact",
+    "short_name": "Cat Facts",
+    "description": "Get random cat facts along with cute cat pictures!",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "://13.jpg",
+        "sizes": "192x192",
+        "type": "image/jpg"
+      },
+      {
+        "src": "13.jpg",
+        "sizes": "512x512",
+        "type": "image/jpg"
+      }
+    ],
+    "orientation": "portrait"
+  }
+  
